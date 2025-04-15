@@ -29,7 +29,7 @@ public class LoginTest extends Base{
 		
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
 		HomePage homePage = new HomePage(driver);
-		loginPage = homePage.naviageToLoginPage();
+		loginPage = homePage.navigateToLoginPage();
 		
 	}
 	

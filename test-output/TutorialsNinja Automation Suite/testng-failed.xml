@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TutorialsNinja Automation Suite]">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="TutorialsNinja Tests(failed)">
+    <classes>
+      <class name="com.tutorialsninja.qa.testcases.SearchTest">
+        <methods>
+          <include name="verifySearchWithInvalidProduct"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifySearchWithoutAnyProduct"/>
+          <include name="verifySearchWithValidProduct"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
+      <class name="com.tutorialsninja.qa.testcases.TS_006_Product_CompareTest">
+        <methods>
+          <include name="verifyCompareMultipleProducts"/>
+          <include name="setUp"/>
+          <include name="verifyCompareProductFromDesktopsCategoryInListView"/>
+          <include name="verifyCompareProductFromSearchResultsInGridView"/>
+          <include name="tearDown"/>
+          <include name="clickOnComparisonLnkfromtheStatusMsgTest"/>
+          <include name="verifyCompareProductFromHomePageFeaturedSection"/>
+          <include name="verifyCompareProductFromDesktopsCategoryInGridView"/>
+          <include name="verifyCompareProductFromSearchResultsInListView"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.TS_006_Product_CompareTest -->
+      <class name="com.tutorialsninja.qa.testcases.RegisterTest">
+        <methods>
+          <include name="verifyRegisteringAccountWithExistingEmailAddress"/>
+          <include name="setup"/>
+          <include name="verifyRegisteringAccountByProvidingAllFields"/>
+          <include name="verifyRegisteringAccountWithoutFillingAnyDetails"/>
+          <include name="verifyRegisteringAnAccountWithMandatoryFields"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.RegisterTest -->
+      <class name="com.tutorialsninja.qa.testcases.LoginTest">
+        <methods>
+          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
+          <include name="setup"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials"/>
+          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
+          <include name="verifyLoginWithoutProvidingCredentials"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
+    </classes>
+  </test> <!-- TutorialsNinja Tests(failed) -->
+</suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->
