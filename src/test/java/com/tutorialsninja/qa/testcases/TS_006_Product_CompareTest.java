@@ -23,7 +23,7 @@ public class TS_006_Product_CompareTest extends Base {
 	ProductComparePage productComparePage;
 	LoginPage loginPage;
 	AccountPage accountPage;
-	WebDriver driver;
+	protected WebDriver driver;
 	
 	public TS_006_Product_CompareTest() {
 		super();
